@@ -62,8 +62,8 @@ if st.button('Diabetes Test Result'):
     diab_prediction = diabetes_model.predict([user_input])
 
     if diab_prediction[0] == 1:
-        diab_diagnosis = 'The person is diabetic'
+        diab_diagnosis = 'Result: Oops! You have diabetes. We prescribe you medication such as metformin or insulin to help manage blood sugar levels Additionally, you are recommended to change your lifestyle including diet modifications and regular exercise to improve overall health and to better control the condition'
     else:
-        diab_diagnosis = 'The person is not diabetic'
+        diab_diagnosis = "Result: Great! You don't have diabetes. Maintain a balanced diet and regular exercise routine to promote overall health and prevent future health complications. Additionally, you are recommended to do regular check-ups to monitor blood sugar levels and overall health status."
 
 st.success(diab_diagnosis)
